@@ -12,7 +12,7 @@
 - [更新日志](#更新日志 "更新日志")
 
 # 安装教程
-前往 Goku API Gateway 官方网站查看：[插件安装教程](url "https://help.eolinker.com/#/tutorial/?groupID=c-339&productID=19")
+前往 Goku API Gateway 官方网站查看：[插件安装教程](url "https://help.eolinker.com/#/tutorial/?groupID=c-341&productID=19")
 
 # 使用教程
 
