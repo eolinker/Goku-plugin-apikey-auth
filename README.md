@@ -1,27 +1,28 @@
-### 插件名称
+# Goku Plugin：API Key
 
-| 类别 |  名称 |  字段  | 属性  |
-| ------------ | ------------ | ------------ |------------ |
-| 策略插件 | Apikey鉴权 | goku-apikey_auth  | 用户鉴权（静态token） |
-
-### 功能描述
+| 插件名称  | 文件名.so  |  插件类型  | 错误处理方式 | 作用范围 |  优先级  |
+| ------------ | ------------ | ------------ | ------------ |   ------------ |
+| APIKey鉴权  | goku-apikey_auth | 访问策略 | 继续后续操作 | 转发前  |  1003  |
 
 鉴权方式的一种，多用于OpenAPI，设置Apikey参数，Apikey默认支持在header、body、query中使用，不能通过认证的用户将无权访问接口。
 
-以下是鉴权的 **参数位置** 、**参数名** 以及 **Authorization-Type** 的值：
+# 目录
+- [安装教程](#安装教程 "安装教程")
+- [使用教程](#使用教程 "使用教程")
+- [更新日志](#更新日志 "更新日志")
 
-| 鉴权方式  | header  | body  | query  | Authorization-Type  |
-| ------------ | ------------ | ------------ | ------------ | ------------ |
-| Apikey | Authorization:"Apikey"  |  Apikey | Apikey  | Apikey  |
+# 安装教程
+前往 Goku API Gateway 官方网站查看：[插件安装教程](url "https://help.eolinker.com/#/tutorial/?groupID=c-339&productID=19")
 
+# 使用教程
 
-### 配置页面
+#### 配置页面
 
 进入控制台 >> 策略管理 >> 某策略 >> 策略插件 >> Apikey鉴权插件：
 
 ![](http://data.eolinker.com/course/U7UhASH318687437c2efcae19a6a1a8ac740c724f3b15b0)
 
-### 配置参数
+#### 配置参数
 
 | 参数名 | 说明   | 
 | ------------ | ------------ |  
@@ -29,7 +30,7 @@
 | hildCredential  | 转发时是否隐藏Apikey |
 | remark  | 备注 |
 
-### 配置示例
+#### 配置示例
 
 ```
 [
@@ -46,7 +47,7 @@
 ]
 ```
 
-### API请求参数
+#### API请求参数
 
 | 参数名 | 说明  | 必填  |   值可能性   |  参数位置 |
 | ------------ | ------------ |  
@@ -55,9 +56,9 @@
 | Authorization  |  鉴权值 |  是  |    | header |
 
 
-### 请求示例
+#### 请求示例
 
-###### 以下API测试页面来自于 **eoLinker AMS** 接口管理平台
+###### 以下API测试页面来自于 **eoLinker API Studio** 接口管理平台
 
 * Apikey在 **header** 中：
 
