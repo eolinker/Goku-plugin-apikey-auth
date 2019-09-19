@@ -31,7 +31,7 @@
 
 2.进入项目文件夹，执行**build.sh**
 ```
-cd goku-params_transformer && chmod +x build.sh && ./build.sh
+cd goku-apikey_auth && chmod +x build.sh && ./build.sh
 ```
 
 ###### 注：build.sh为通用的插件编译脚本，自定义插件时可以拷贝直接使用。
